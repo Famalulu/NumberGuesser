@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Number Guesser</title>
+    <style>
+        body {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+        #after-submit, #intro-text {
+            display: none;
+        }
+        #guess-btn, #submit-btn {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Number Guesser</h1>
+        <div id="game">
+            <div id="intro-text">
+                <h5>Guess a number between <span class="min-num"></span> and <span class="max-num"></span></h5>
+                <p>You have 3 chance to guess the number.</p>
+            </div>
+            <p>Min: <input type="number" id="min-input" placeholder="Min number"></p>
+            <p>Max: <input type="number" id="max-input" placeholder="Max number"></p>
+            <input type="submit" value="Enter the Range" id="submit-btn">
+            <div id="after-submit">
+                <input type="number" id="guess-input" placeholder="Enter your guess...">
+                <input type="submit" value="Submit" id="guess-btn">
+            </div>
+            <p class="message"></p>
+        </div>
+    </div>     
+    <script src="app.js"></script>
+</body>
+</html>
